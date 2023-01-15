@@ -18,7 +18,7 @@ all: clean init
 	$(PWD)/bin/Apprepo.AppImage --destination=$(PWD)/build appdir boilerplate \
 	    libgdk-pixbuf2.0-0 libatk1.0-0 libatk-bridge2.0-0 libgtk2.0-0 \
 	    libreadline8 at-spi2-core libpango-1.0-0 libselinux1 \
-		libgtkmm-3.0-1v5 libproj15 libproj-dev
+		libgtkmm-3.0-1v5 libproj15 libproj-dev libzip5 libpython3.8
 
 	wget --output-document="$(PWD)/build/build.deb" https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community_8.0.28-1ubuntu20.04_amd64.deb
 	dpkg -x $(PWD)/build/build.deb $(PWD)/build
